@@ -72,10 +72,6 @@ git clone https://github.com/kush12bansal/Student-Management-System.git cd Stude
 Create and activate a virtual environment (optional but recommended):
 python -m venv venv source venv/bin/activate # On Windows use venv\Scripts\activate
 
-swift
-Copy
-Edit
-
 Install the required Python packages:
 pip install -r requirements.txt
 
