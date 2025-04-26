@@ -10,11 +10,17 @@ Web-based Student Management System with secure authentication, CRUD operations,
 
 ## Tech Stack
 
-![HTML](https://img.shields.io/badge/Frontend-HTML5-orange?logo=html5&logoColor=white)
-![CSS](https://img.shields.io/badge/Frontend-CSS3-blue?logo=css3&logoColor=white)
-![JavaScript](https://img.shields.io/badge/Frontend-JavaScript-yellow?logo=javascript&logoColor=white)
-![Flask](https://img.shields.io/badge/Backend-Flask-lightgrey?logo=flask&logoColor=white)
-![MySQL](https://img.shields.io/badge/Database-MySQL-blue?logo=mysql&logoColor=white)
+### Frontend
+![HTML](https://img.shields.io/badge/HTML5-E34F26?logo=html5&logoColor=white)
+![CSS](https://img.shields.io/badge/CSS3-1572B6?logo=css3&logoColor=white)
+![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?logo=javascript&logoColor=black)
+
+### Backend
+![Flask](https://img.shields.io/badge/Flask-000000?logo=flask&logoColor=white)
+
+### Database
+![MySQL](https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white)
+
 
 
 ## How to Run Locally
