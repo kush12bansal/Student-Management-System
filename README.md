@@ -72,17 +72,17 @@ git clone https://github.com/kush12bansal/Student-Management-System.git cd Stude
 Create and activate a virtual environment (optional but recommended):
 python -m venv venv source venv/bin/activate # On Windows use venv\Scripts\activate
 
-Install the required Python packages:
+3. **Install the required Python packages**:
 pip install -r requirements.txt
 
-3. **Setup MySQL Database**:
+4. **Setup MySQL Database**:
 - Create a MySQL database for the project. You can use the following SQL query to create a database:
   ```sql
   CREATE DATABASE student_management_system;
   ```
 - Import the required schema by running the SQL script in `database/setup.sql`.
 
-4. **Configure Environment Variables**:
+5. **Configure Environment Variables**:
 - Set up a `.env` file to store sensitive environment variables like the database username, password, and Flask app settings:
   ```
   FLASK_APP=app.py
@@ -93,10 +93,10 @@ pip install -r requirements.txt
   MYSQL_DATABASE=student_management_system
   ```
 
-5. **Run the Flask Server**:
+6. **Run the Flask Server**:
 python app.py
 
-6. **Open the Application**:
+7. **Open the Application**:
 - Open your browser and navigate to:
   ```
   http://localhost:5000/
