@@ -1,0 +1,210 @@
+/* Reset and Base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Poppins', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #EDE8F5, #ADBBDA);
+  background-attachment: fixed;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Headings */
+h1, h2 {
+  color: #3D52A0;
+  margin-bottom: 20px;
+  text-align: center;
+  text-shadow: 0 4px 10px rgba(61, 82, 160, 0.25);
+  font-size: 2.5rem;
+  animation: fadeInDown 1s ease;
+}
+
+/* Navbar */
+.navbar {
+  width: 100%;
+  background: rgba(61, 82, 160, 0.8);
+  backdrop-filter: blur(10px);
+  padding: 15px 30px;
+  border-radius: 16px;
+  margin-bottom: 30px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar a {
+  color: #fff;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 18px;
+  transition: color 0.3s;
+}
+
+.navbar a:hover {
+  color: #ADBBDA;
+}
+
+/* Form Styles */
+form {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(10px);
+  padding: 30px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  animation: popUp 0.7s ease;
+}
+
+input, select {
+  padding: 12px;
+  border: 2px solid #ccc;
+  border-radius: 12px;
+  outline: none;
+  background: rgba(255, 255, 255, 0.5);
+  font-size: 16px;
+  transition: all 0.3s ease;
+}
+
+input:focus, select:focus {
+  border-color: #7091E6;
+  box-shadow: 0 0 12px rgba(112, 145, 230, 0.5);
+}
+
+/* Buttons */
+button {
+  padding: 12px;
+  border: none;
+  border-radius: 12px;
+  background: linear-gradient(135deg, #7091E6, #3D52A0);
+  color: #fff;
+  font-weight: bold;
+  font-size: 16px;
+  cursor: pointer;
+  transition: all 0.4s ease;
+  box-shadow: 0 6px 15px rgba(61, 82, 160, 0.3);
+}
+
+button:hover {
+  background: linear-gradient(135deg, #3D52A0, #7091E6);
+  transform: translateY(-3px);
+  box-shadow: 0 8px 20px rgba(61, 82, 160, 0.5);
+}
+
+/* Dashboard Container */
+.dashboard-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 40px;
+  margin-top: 40px;
+}
+
+.dashboard-box {
+  background: rgba(255, 255, 255, 0.7);
+  backdrop-filter: blur(12px);
+  width: 240px;
+  height: 140px;
+  border-radius: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+  color: #3D52A0;
+  font-size: 20px;
+  font-weight: 600;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  transition: all 0.4s ease;
+  animation: fadeInUp 1s ease;
+}
+
+.dashboard-box:hover {
+  background: linear-gradient(135deg, #7091E6, #8697E4);
+  color: #fff;
+  transform: translateY(-10px) scale(1.05);
+  box-shadow: 0 16px 40px rgba(61, 82, 160, 0.5);
+}
+
+/* Tables */
+table {
+  width: 100%;
+  max-width: 1100px;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 20px;
+  overflow: hidden;
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+  border-collapse: collapse;
+  animation: fadeIn 1s ease;
+}
+
+th, td {
+  padding: 18px;
+  text-align: center;
+  border-bottom: 1px solid #ccc;
+  font-size: 16px;
+}
+
+th {
+  background-color: #3D52A0;
+  color: white;
+  font-weight: bold;
+}
+
+tr:hover {
+  background-color: rgba(173, 187, 218, 0.3);
+}
+
+/* Specific Center Heading */
+.centerheading {
+  text-align: center;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from { opacity: 0; }
+  to { opacity: 1; }
+}
+
+@keyframes fadeInUp {
+  0% { opacity: 0; transform: translateY(30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes fadeInDown {
+  0% { opacity: 0; transform: translateY(-30px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+@keyframes popUp {
+  0% { transform: scale(0.8); opacity: 0; }
+  100% { transform: scale(1); opacity: 1; }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard-container {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  form {
+    width: 90%;
+  }
+
+  table {
+    width: 95%;
+  }
+}
