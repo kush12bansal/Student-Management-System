@@ -10,9 +10,9 @@ CORS(app)
 def get_db_connection():
     return mysql.connector.connect(
         host="localhost",
-        user="root",
-        password="KUSH@bansal09",
-        database="student_management"
+        user="username",
+        password="password",
+        database="database_name"
     )
 
 # API: Add Student
